@@ -1,0 +1,78 @@
+print("Hello")
+
+_x=input("Enter your age")
+if(int(_x)>18):
+    print("you are eligible to vote")
+else:
+    print("you are not eligible to vote")
+
+
+a=100
+b=30
+print("Addition",a+b)
+print("Subraction",a-b)
+print("Multiplication",a*b)
+print("Division",a/b)
+print("Modules",a%b)
+print("Floor division",a//b)
+
+import math
+print(math.sqrt(9))
+print(math.log(100))
+print(math.gamma(100))
+
+a="""Hello
+welcome
+to
+python"""
+print(a[0])
+print(a[-5])
+print(a[-1])
+print(a)
+text="Python"
+print(text[0:3])
+print(text[2:])
+print(text[:3])
+
+print(a+text)
+print("Hi" *3)
+
+print(text.upper())
+print(a.replace("python","java"))
+print(len(a))
+
+
+print("a" not  in "apple")
+s1="I am {0} ans I am {1} old".format("hema",30)
+print(s1)
+
+s2=a.split()
+print(s2)
+
+
+numbers=[10,20,30,40]
+names=["Ram","Hari","Ramhya"]
+mixed=[1,"Pthon",3.5,True]
+numbers[1]=100
+print(numbers)
+print(names)
+print(mixed)
+
+for i in numbers:
+    print(i)
+if 10 in numbers:
+    print("Found")
+matrix=[[1,2,3],[4,5,6]]
+print(matrix[1][2])
+
+names.reverse()
+print(names)
+names.append("kalai")
+print(names)
+names.extend(["pavan","leela"])
+print(names)
+names.remove("kalai")
+print(names)
+names.insert(3,"uma")
+ 
+ 
