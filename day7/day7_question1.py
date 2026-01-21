@@ -24,12 +24,23 @@ def get_user(user_id):
 
 @app.route("/users/add",methods=["POST"])
 def add_user():
-    data=request.get_json()
+    data=request.json()
     newuser={
         "id":len(users)+1,"name":data.get("name")
     }
     users.append(newuser)
     return jsonify(newuser),201
+
+
+@app.route("/users/<int:user_id>",methods=["PUT"])
+def update_user(user_id):
+    data=request.json
+    for user in users:
+        if user["id"]==user_id:
+            user["name"]=data.get("name")
+            return jsonify(user)
+    return jsonify({"Message": "user not found"}), 404
+
 
 if __name__=="__main__":
     app.run(debug=True)
