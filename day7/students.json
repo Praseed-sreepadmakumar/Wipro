@@ -1,0 +1,11 @@
+[
+    {
+        "id": "1",
+        "name": "Praseed",
+        "department": "It",
+        "semester": 5,
+        "marks": [
+            12
+        ]
+    }
+]
