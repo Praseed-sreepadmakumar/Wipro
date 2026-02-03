@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.12.8 on win32)" generated="2026-02-02T15:23:20.584453" rpa="false" schemaversion="5">
+<suite id="s1" name="Patient Registration" source="C:\Users\prase\OneDrive\Desktop\PythonProject\casestudy3\robot_tests\patient_registration.robot">
+<kw name="Open Browser To App" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-02T15:23:20.957277" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:5000'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-02T15:23:20.957277" elapsed="2.060063"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-02T15:23:23.018849" elapsed="0.056588"/>
+</kw>
+<status status="PASS" start="2026-02-02T15:23:20.956272" elapsed="2.119165"/>
+</kw>
+<test id="s1-t1" name="Register Patient Successfully" line="11">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-02T15:23:23.076434" level="INFO">Typing text 'John' into text field 'id:name'.</msg>
+<arg>id:name</arg>
+<arg>John</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-02T15:23:23.076434" elapsed="0.145180"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-02T15:23:23.222614" level="INFO">Typing text '35' into text field 'id:age'.</msg>
+<arg>id:age</arg>
+<arg>35</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-02T15:23:23.221614" elapsed="0.108411"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-02T15:23:23.330025" level="INFO">Clicking element 'xpath://input[@value="Male"]'.</msg>
+<arg>xpath://input[@value="Male"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-02T15:23:23.330025" elapsed="0.130064"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-02T15:23:23.464645" level="INFO">Typing text '7777777777' into text field 'id:contact'.</msg>
+<arg>id:contact</arg>
+<arg>7777777777</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-02T15:23:23.463610" elapsed="0.118346"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-02T15:23:23.581956" level="INFO">Typing text 'Cold' into text field 'id:disease'.</msg>
+<arg>id:disease</arg>
+<arg>Cold</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-02T15:23:23.581956" elapsed="0.088118"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2026-02-02T15:23:23.671073" level="INFO">Selecting options from selection list 'id:doctor' by label Dr. Smith.</msg>
+<arg>id:doctor</arg>
+<arg>Dr. Smith</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2026-02-02T15:23:23.671073" elapsed="0.073297"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-02T15:23:23.744370" level="INFO">Clicking button 'Register'.</msg>
+<arg>Register</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-02T15:23:23.744370" elapsed="0.075523"/>
+</kw>
+<status status="PASS" start="2026-02-02T15:23:23.075437" elapsed="0.745458"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-02T15:23:23.821895" elapsed="2.231521"/>
+</kw>
+<status status="PASS" start="2026-02-02T15:23:20.586441" elapsed="5.466975"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Patient Registration" id="s1" pass="1" fail="0" skip="0">Patient Registration</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
